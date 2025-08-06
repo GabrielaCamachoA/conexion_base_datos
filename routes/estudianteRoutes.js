@@ -3,7 +3,7 @@ const router = express.Router();
 const estudianteController = require("../controllers/estudianteController.js");
 
 // Obtener todos los estudiante
-router.get("/", estudianteController.consultar);
+router.get("/", estudianteController.consultarEstudiante);
 
 // Obtener un estudiante específico por ID
 router.get("/:id", estudianteController.consultarDetalle);
